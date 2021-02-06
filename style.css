@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "MapoFlowerIsland";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --main-font: "MapoFlowerIsland";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  min-height: 100vh;
+  color: white;
+  background-color: #252525;
+  font-family: var(--main-font);
+}
+
+.section1Div {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 10rem;
+}
+
+.section1Div h1 {
+  font-weight: 900;
+  font-size: 6rem;
+}
+
+.section1Div h3 {
+  margin-top: 6rem;
+  margin-left: 4rem;
+  font-size: 1.5rem;
+}
+
+.section1Div button {
+  position: absolute;
+  top: 70%;
+  right: 16%;
+  padding: 1rem 2.9rem;
+  border: 1px white solid;
+  background-color: inherit;
+  color: white;
+  font-family: var(--main-font);
+  cursor: pointer;
+  font-size: 1.5rem;
+  outline: none;
+  border-radius: 8px;
+  transition: all 0.33s linear;
+}
+
+.section1Div button:hover {
+  color: #252525;
+  background-color: white;
+}
+
+.section2 {
+  position: relative;
+}
+
+.fas {
+  font-size: 1.7rem;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1rem;
+  animation: scale 1.5s infinite;
+  /* animation-timing-function: ease; */
+}
+
+.fa-angle-down {
+  bottom: 0;
+  margin-bottom: 2rem;
+}
+
+.fa-angle-up {
+  top: 0;
+  margin-top: 2rem;
+}
+
+@keyframes scale {
+  from {
+    transform: scale(1.5);
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
